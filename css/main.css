@@ -1,0 +1,49 @@
+/* stardos-stencil-700 - latin */
+@font-face {
+  font-family: 'Stardos Stencil';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/stardos-stencil-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/stardos-stencil-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body{
+  font-family: 'Stardos Stencil', 'Arial' , sans-serif;
+  margin: 30px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.js-list{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.item{
+  border: 5px inset rgba(165, 42, 42, 0.411);
+  color: rgb(115, 105, 105);
+  margin: 0;
+  margin-bottom: 30px;
+  padding:0 20px;
+  width: 450px;
+  border-radius: 8px;
+  background-color: bisque;
+}
+
+.img{
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.title{
+  text-align: center;
+}
