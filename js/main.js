@@ -438,5 +438,30 @@ function movieTime(array,node){
   }
 }
 movieTime(films,elList)
+var elSelect = document.querySelector('.js-select')
+let result = []
+elSelect.addEventListener("change" , function(){
+	result = [];
+  elList.innerHTML =''
+	let elSelectVal = elSelect.value
+	films.forEach(hero => {
+		if(hero.genres.includes(elSelectVal)){
+			result.push(hero)
+		}
+	})
+	movieTime(result,elList)
+})
 
+let myArray = [];
 
+for (item of films) {
+  myArray.push(...item.genres);
+}
+
+let mySet = new Set(myArray);
+
+for (const item of Array.from(mySet)) {
+  let li = document.createElement("option");
+  li.textContent = item;
+  elSelect.appendChild(li);
+}

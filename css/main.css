@@ -47,3 +47,14 @@ body{
 .title{
   text-align: center;
 }
+
+.js-select{
+  border: 5px double  gray;
+  border-radius: 4px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 35px;
+}
