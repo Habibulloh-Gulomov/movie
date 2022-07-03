@@ -465,3 +465,30 @@ for (const item of Array.from(mySet)) {
   li.textContent = item;
   elSelect.appendChild(li);
 }
+
+var elSelect2 = document.querySelector('.select')
+
+
+
+// console.log(films.sort((a,b) => {
+//    if(a.title < b.title){
+//       return -1
+//    }
+// }))
+let result2 = []
+
+elSelect2.addEventListener("change", function(){
+	elList.innerHTML = "";
+	result2 = [];
+	result2 = films.sort((a,b) => {
+      if( a.title < b.title ,elSelect2.value === 'ztoa'){
+			return -1
+		}
+		else if(b.title > a.title ){
+			return -1
+		}
+				
+	});
+	movieTime(result2,elList)
+});
+
